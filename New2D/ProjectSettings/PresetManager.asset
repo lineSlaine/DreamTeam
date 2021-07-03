@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1386491679 &1
@@ -6,12 +5,3 @@ PresetManager:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_DefaultPresets: {}
-=======
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!1386491679 &1
-PresetManager:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_DefaultPresets: {}
->>>>>>> 5f077b7799ae1142d631eb08d0decb3056e550bd
