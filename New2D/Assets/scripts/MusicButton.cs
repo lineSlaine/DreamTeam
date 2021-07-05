@@ -6,19 +6,24 @@ using UnityEngine.UI;
 public class MusicButton : MonoBehaviour
 {
     public Sprite _offVolume, _onVolume;
+    public GameObject _сanvas;
+    AudioSource _music;
     Image _VolumeImage;
     void Start()
     {
         _VolumeImage = GetComponent<Image>();
-        _VolumeImage.sprite = _onVolume; 
+        _music = _сanvas.GetComponent<AudioSource>();
+        _music.mute = true;
+        SwitchMute();
     }
     void Update()
     {
         
     }
-    public void SwitchSpriteVolume()
+    public void SwitchMute()
     {
-        if(_VolumeImage.sprite == _onVolume) _VolumeImage.sprite = _offVolume;
+        _music.mute = !_music.mute;
+        if(_music.mute) _VolumeImage.sprite = _offVolume;
         else _VolumeImage.sprite = _onVolume;
     }
 }
